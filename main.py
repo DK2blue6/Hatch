@@ -76,7 +76,7 @@ def wizard():
 
 def brutes(username, username_selector ,password_selector,login_btn_selector,pass_list, website):
     f = open(pass_list, 'r')
-    driver = webdriver.Chrome(CHROME_DVR_DIR)
+    driver = webdriver.Chrome(executable_path='/path/to/chromedriver')
     optionss = webdriver.ChromeOptions()
     optionss.add_argument("--disable-popup-blocking")
     optionss.add_argument("--disable-extensions")
